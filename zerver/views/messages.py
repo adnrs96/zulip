@@ -45,7 +45,7 @@ from sqlalchemy import func
 from sqlalchemy.sql import select, join, column, literal_column, literal, and_, \
     or_, not_, union_all, alias, Selectable, Select, ColumnElement, table
 
-from dateutil.parser import parse as dateparser
+from dateparser import parse as dateparser
 import re
 import ujson
 import datetime
@@ -918,17 +918,21 @@ def handle_deferred_message(sender: UserProfile, client: Client,
         local_tz = tz_guess
     elif sender.timezone:
         local_tz = sender.timezone
-    try:
-        deliver_at = dateparser(defer_until)
-    except ValueError:
+
+    settings = {'TIMEZONE': local_tz,
+                'PREFER_DATES_FROM': 'future',
+                'TO_TIMEZONE': 'UTC',
+                'RETURN_AS_TIMEZONE_AWARE': True}
+    deliver_at = dateparser(defer_until, settings=settings)
+
+    if not deliver_at:
         return json_error(_("Invalid timestamp for scheduling message."))
 
     deliver_at_usertz = deliver_at
-    if deliver_at_usertz.tzinfo is None:
+
+    if local_tz != 'UTC':
         user_tz = get_timezone(local_tz)
-        # Since mypy is not able to recognize localize and normalize as attributes of tzinfo we use ignore.
-        deliver_at_usertz = user_tz.normalize(user_tz.localize(deliver_at))  # type: ignore # Reason in comment on previous line.
-    deliver_at = convert_to_UTC(deliver_at_usertz)
+        deliver_at_usertz = deliver_at.astimezone(user_tz)
 
     if deliver_at <= timezone_now():
         return json_error(_("Invalid timestamp for scheduling message. Choose a time in future."))
