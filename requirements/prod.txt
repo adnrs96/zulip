@@ -27,6 +27,7 @@ chardet==3.0.4
 cryptography==2.1.2
 cssselect==1.0.1          # via premailer
 cssutils==1.0.2           # via premailer
+dateparser==0.6.0
 decorator==4.1.2          # via ipython, traitlets
 defusedxml==0.5.0
 django-auth-ldap==1.2.16
@@ -95,10 +96,11 @@ python3-openid==3.1.0     # via social-auth-core
 pytz==2017.2
 qrcode==4.0.4             # via django-two-factor-auth
 redis==2.10.6
-regex==2017.11.9
+regex==2017.11.9          # via dateparser
 requests-oauthlib==0.8.0
 requests==2.18.4          # via premailer, pyoembed, python-gcm, python-twitter, requests-oauthlib, social-auth-core, twilio
 rsa==3.4.2
+ruamel.yaml==0.15.35      # via dateparser
 simplegeneric==0.8.1      # via ipython
 six==1.11.0
 smmap==0.9.0
@@ -112,6 +114,7 @@ tornado==4.5.2
 traitlets==4.3.2          # via ipython
 twilio==6.9.0
 typing==3.6.2
+tzlocal==1.5.1            # via dateparser
 uritemplate==3.0.0
 urllib3==1.22             # via requests
 uwsgi==2.0.14

@@ -110,6 +110,8 @@ pylibmc==1.5.2
 # Needed for zerver/tests/test_timestamp.py
 python-dateutil==2.6.1
 
+dateparser==0.6.0
+
 # Needed for timezone work
 pytz==2017.2
 
