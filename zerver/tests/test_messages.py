@@ -2785,6 +2785,8 @@ class SoftDeactivationMessageTest(ZulipTestCase):
             add_missing_messages(long_term_idle_user)
         self.assert_length(queries, 5)
         idle_user_msg_list = get_user_messages(long_term_idle_user)
+        print(idle_user_msg_list)
+        print(len(idle_user_msg_list))
         self.assertEqual(len(idle_user_msg_list), idle_user_msg_count + 2)
         for sent_message in sent_message_list:
             self.assertEqual(idle_user_msg_list.pop(), sent_message)
