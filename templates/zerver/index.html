@@ -4,7 +4,7 @@
 
 {% block page_params %}
 {# Insert parameters, which have been encoded with JSONEncoderForHTML. #}
-<script type="text/javascript">
+<script type="text/javascript" nonce="{{ page_params_nonce }}">
     {% autoescape off %}
     var page_params = {{ page_params }};
     {% endautoescape %}

@@ -26,7 +26,7 @@ from zerver.lib.json_encoder_for_html import JSONEncoderForHTML
 from zerver.lib.push_notifications import num_push_devices_for_user
 from zerver.lib.streams import access_stream_by_name
 from zerver.lib.subdomains import get_subdomain
-from zerver.lib.utils import statsd
+from zerver.lib.utils import statsd, make_safe_digest
 
 import calendar
 import datetime
@@ -235,10 +235,13 @@ def home_real(request: HttpRequest) -> HttpResponse:
     if user_profile.realm.invite_by_admins_only and not user_profile.is_realm_admin:
         show_invites = False
 
+    json_encoded_params = JSONEncoderForHTML().encode(page_params)
+    page_params_nonce = make_safe_digest(json_encoded_params)
     request._log_data['extra'] = "[%s]" % (register_ret["queue_id"],)
     response = render(request, 'zerver/index.html',
                       context={'user_profile': user_profile,
-                               'page_params': JSONEncoderForHTML().encode(page_params),
+                               'page_params': json_encoded_params,
+                               'page_params_nonce': page_params_nonce,
                                'nofontface': is_buggy_ua(request.META.get("HTTP_USER_AGENT", "Unspecified")),
                                'avatar_url': avatar_url(user_profile),
                                'show_debug':
