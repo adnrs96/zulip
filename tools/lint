@@ -86,7 +86,7 @@ def run():
 
     linter_config = LinterConfig(by_lang)
     linter_config.external_linter('add_class', ['tools/find-add-class'], ['js'])
-    linter_config.external_linter('css', ['node', 'node_modules/.bin/stylelint'], ['css', 'scss'])
+    linter_config.external_linter('stylelint', ['node', 'node_modules/.bin/stylelint'], ['css', 'scss'])
     linter_config.external_linter('eslint', ['node', 'node_modules/.bin/eslint',
                                              '--quiet', '--cache'], ['js'])
     linter_config.external_linter('tslint', ['node', 'node_modules/.bin/tslint', '-c',
