@@ -1134,8 +1134,8 @@ input[type=checkbox].inline-block {
 #user-groups .save-status.cancel {
     display: none;
     opacity: 0;
-    border: 1px solid #333;
-    color: #333;
+    border: 1px solid hsl(0.0, 0.0%, 20.0%);
+    color: hsl(0.0, 0.0%, 20.0%);
 }
 
 #user-groups .checkmark {
@@ -1149,7 +1149,7 @@ input[type=checkbox].inline-block {
 #user-groups .save-instructions {
     display: none;
     opacity: 0;
-    color: #333;
+    color: hsl(0.0, 0.0%, 20.0%);
     font-size: 0.9em;
 }
 
@@ -1404,7 +1404,7 @@ input[type=checkbox].inline-block {
 }
 
 body:not(.night-mode) #account-settings .custom_user_field .datepicker {
-    background-color: #ffffff;
+    background-color: hsl(0.0, 0.0%, 100.0%);
 }
 
 #settings_page .custom_user_field textarea {
@@ -1578,7 +1578,7 @@ input[type=text]#settings_search {
 }
 
 .subsection-failed-status p {
-    background: #f2dede;
+    background: hsl(0.0, 43.48%, 90.98%);
     padding: 2px 6px;
     border-radius: 4px;
     margin: 0 0 0 5px;
