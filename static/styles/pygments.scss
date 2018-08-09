@@ -13,7 +13,7 @@
     font-style: italic;
 } /* Comment */
 .codehilite .err {
-    border: 1px solid #ff0000;
+    border: 1px solid hsl(0.0, 100.0%, 50.0%);
 } /* Error */
 .codehilite .k {
     color: hsl(332, 70%, 38%);
@@ -214,38 +214,38 @@
 
 body.night-mode .codehilite code,
 body.night-mode .codehilite pre {
-    color: #a2cdff;
-    background-color: #1c252f;
+    color: hsl(212.26, 100.0%, 81.76%);
+    background-color: hsl(211.58, 25.33%, 14.71%);
 }
 
 body.night-mode .codehilite .hll {
-    background-color: #222;
+    background-color: hsl(0.0, 0.0%, 13.33%);
 }
 
 body.night-mode .codehilite .err {
-    color: #e37170;
-    background-color: #3d3535;
+    color: hsl(0.52, 67.25%, 66.47%);
+    background-color: hsl(0.0, 7.02%, 22.35%);
 }
 
 body.night-mode .codehilite .k {
-    color: #ef9b3f;
+    color: hsl(31.36, 84.62%, 59.22%);
 }
 
 body.night-mode .codehilite .p {
-    color: #41706f;
+    color: hsl(178.72, 26.55%, 34.71%);
 }
 
 body.night-mode .codehilite .cs {
-    color: #cd0000;
+    color: hsl(0.0, 100.0%, 40.2%);
     font-weight: 700;
 }
 
 body.night-mode .codehilite .gd {
-    color: #cd0000;
+    color: hsl(0.0, 100.0%, 40.2%);
 }
 
 body.night-mode .codehilite .ge {
-    color: #ccc;
+    color: hsl(0.0, 0.0%, 80.0%);
     font-style: italic;
 }
 
@@ -258,7 +258,7 @@ body.night-mode .codehilite .go {
 }
 
 body.night-mode .codehilite .gs {
-    color: #ccc;
+    color: hsl(0.0, 0.0%, 80.0%);
     font-weight: 700;
 }
 
@@ -268,45 +268,45 @@ body.night-mode .codehilite .gu {
 }
 
 body.night-mode .codehilite .gt {
-    color: #0040d0;
+    color: hsl(221.54, 100.0%, 40.78%);
 }
 
 body.night-mode .codehilite .kc {
-    color: #dca3a3;
+    color: hsl(0.0, 44.88%, 75.1%);
 }
 
 body.night-mode .codehilite .kd {
-    color: #ffff86;
+    color: hsl(60.0, 100.0%, 76.27%);
 }
 
 body.night-mode .codehilite .kn {
-    color: #dfaf8f;
+    color: hsl(24.0, 55.56%, 71.76%);
     font-weight: 700;
 }
 
 body.night-mode .codehilite .kp {
-    color: #cdcf99;
+    color: hsl(62.22, 36.0%, 70.59%);
 }
 
 body.night-mode .codehilite .kr {
-    color: #d04e50;
+    color: hsl(359.08, 58.04%, 56.08%);
 }
 
 body.night-mode .codehilite .ni {
-    color: #c28182;
+    color: hsl(359.08, 34.76%, 63.33%);
 }
 
 body.night-mode .codehilite .ne {
-    color: #c3bf9f;
+    color: hsl(53.33, 23.08%, 69.41%);
     font-weight: 700;
 }
 
 body.night-mode .codehilite .nn {
-    color: #8fbede;
+    color: hsl(204.3, 54.48%, 71.57%);
 }
 
 body.night-mode .codehilite .vi {
-    color: #ffffc7;
+    color: hsl(60.0, 100.0%, 89.02%);
 }
 
 body.night-mode .codehilite .c,
@@ -314,7 +314,7 @@ body.night-mode .codehilite .g,
 body.night-mode .codehilite .cm,
 body.night-mode .codehilite .cp,
 body.night-mode .codehilite .c1 {
-    color: #7d8e9e;
+    color: hsl(209.09, 14.54%, 55.49%);
 }
 
 body.night-mode .codehilite .l,
@@ -325,29 +325,29 @@ body.night-mode .codehilite .nl,
 body.night-mode .codehilite .nx,
 body.night-mode .codehilite .py,
 body.night-mode .codehilite .w {
-    color: #ccc;
+    color: hsl(0.0, 0.0%, 80.0%);
 }
 
 body.night-mode .codehilite .n,
 body.night-mode .codehilite .nv,
 body.night-mode .codehilite .vg {
-    color: #dcdccc;
+    color: hsl(60.0, 18.6%, 83.14%);
 }
 
 body.night-mode .codehilite .o,
 body.night-mode .codehilite .ow {
-    color: #f0efd0;
+    color: hsl(58.12, 51.61%, 87.84%);
 }
 
 body.night-mode .codehilite .gh,
 body.night-mode .codehilite .gp {
-    color: #dcdccc;
+    color: hsl(60.0, 18.6%, 83.14%);
     font-weight: 700;
 }
 
 body.night-mode .codehilite .gi,
 body.night-mode .codehilite .kt {
-    color: #00cd00;
+    color: hsl(120.0, 100.0%, 40.2%);
 }
 
 body.night-mode .codehilite .ld,
@@ -363,7 +363,7 @@ body.night-mode .codehilite .sx,
 body.night-mode .codehilite .sr,
 body.night-mode .codehilite .s1,
 body.night-mode .codehilite .ss {
-    color: #cc9393;
+    color: hsl(0.0, 35.85%, 68.82%);
 }
 
 body.night-mode .codehilite .m,
@@ -372,12 +372,12 @@ body.night-mode .codehilite .mh,
 body.night-mode .codehilite .mi,
 body.night-mode .codehilite .mo,
 body.night-mode .codehilite .il {
-    color: #8cd0d3;
+    color: hsl(182.54, 44.65%, 68.82%);
 }
 
 body.night-mode .codehilite .na,
 body.night-mode .codehilite .nt {
-    color: #9ac39f;
+    color: hsl(127.32, 25.47%, 68.43%);
 }
 
 body.night-mode .codehilite .nb,
@@ -385,5 +385,5 @@ body.night-mode .codehilite .nc,
 body.night-mode .codehilite .nf,
 body.night-mode .codehilite .bp,
 body.night-mode .codehilite .vc {
-    color: #efef8f;
+    color: hsl(60.0, 75.0%, 74.9%);
 }
