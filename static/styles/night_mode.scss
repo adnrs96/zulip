@@ -116,7 +116,7 @@ on a dark background, and don't change the dark labels dark either. */
 
     #search_arrows .pill:focus,
     .pm_recipient .pill-container .pill:focus {
-        color: #fff;
+        color: hsl(0.0, 0.0%, 100.0%);
         border: 1px solid hsla(176, 78%, 28%, 0.6);
         background: hsla(176, 49%, 42%, 0.4);
     }
@@ -361,7 +361,7 @@ on a dark background, and don't change the dark labels dark either. */
     .alert.alert-success {
         color: inherit;
         background-color: hsla(161, 60%, 46%, 0.20);
-        border-color: #1e9e7f;
+        border-color: hsl(165.47, 68.09%, 36.86%);
     }
 
     .alert.alert-error,
@@ -484,11 +484,11 @@ on a dark background, and don't change the dark labels dark either. */
     }
 
     .email_tooltip {
-        background-color: #404c59;
+        background-color: hsl(211.2, 16.34%, 30.0%);
     }
 
     .email_tooltip::after {
-        border-bottom-color: #404c59 !important;
+        border-bottom-color: hsl(211.2, 16.34%, 30.0%) !important;
     }
 
     .ps__rail-y {
@@ -496,9 +496,9 @@ on a dark background, and don't change the dark labels dark either. */
     }
 
     #bots_lists_navbar .active a {
-        color: #ddd;
+        color: hsl(0.0, 0.0%, 86.67%);
         background-color: hsl(212, 28%, 18%);
-        border-color: #ddd;
+        border-color: hsl(0.0, 0.0%, 86.67%);
         border-bottom-color: transparent;
     }
 
