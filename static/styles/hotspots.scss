@@ -133,8 +133,8 @@
     border: none;
     font-size: 1.15em;
     font-weight: 600;
-    color: #fff;
-    background-color: #43ad90;
+    color: hsl(0.0, 0.0%, 100.0%);
+    background-color: hsl(163.58, 44.17%, 47.06%);
     border-radius: 4px;
     white-space: normal;
     padding: 7px 20px;
@@ -142,7 +142,7 @@
 }
 
 .hotspot-confirm:hover {
-    background-color: #5cc0a5;
+    background-color: hsl(163.8, 44.25%, 55.69%);
 }
 
 .hotspot.overlay .hotspot-confirm {
@@ -248,9 +248,9 @@
     width: 350px;
     max-width: 95%;
     box-shadow: 0 5px 10px rgba(133, 136, 142, 0.1);
-    border: 1px solid #f2f2f2;
+    border: 1px solid hsl(0.0, 0.0%, 94.9%);
     border-radius: 4px;
-    background: #f9f9f9;
+    background: hsl(0.0, 0.0%, 97.65%);
     margin: 0 auto;
     position: relative;
 }
@@ -259,7 +259,7 @@
     height: 10px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    background-color: #43ad90;
+    background-color: hsl(163.58, 44.17%, 47.06%);
 }
 
 .hotspot-inline-left {
