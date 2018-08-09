@@ -75,7 +75,7 @@
     font-weight: 300;
 }
 
-#add_new_subscription {
+hsl(180.0, 42.86%, 76.67%)_new_subscription {
     text-align: left;
 }
 
@@ -186,7 +186,7 @@
     border: 1px solid hsl(0, 0%, 68%);
 }
 
-form#add_new_subscription {
+formhsl(180.0, 42.86%, 76.67%)_new_subscription {
     margin: 0;
 }
 
@@ -1059,7 +1059,7 @@ form#add_new_subscription {
 
         top: 45px;
         border-top: 1px solid hsl(0, 0%, 86%);
-        background-color: #fff;
+        background-color: hsl(0.0, 0.0%, 100.0%);
         border-top: none;
 
         transition: all 0.3s ease;
