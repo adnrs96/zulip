@@ -42,7 +42,10 @@ def serve_local(request: HttpRequest, path_id: str) -> HttpResponse:
     # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition
     attachment = True
     file_type = guess_type(local_path)[0]
+    print(file_type)
     if file_type is not None and (file_type.startswith("image/") or
+                                  file_type.startswith("video/") or
+                                  file_type.startswith("audio/") or
                                   file_type == "application/pdf"):
         attachment = False
 
